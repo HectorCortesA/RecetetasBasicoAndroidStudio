@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tienda">
+
+        <LinearLayout
+
+            android:layout_width="409dp"
+            android:layout_height="100dp"
+            android:background="@drawable/fondo"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18pt"
+                android:gravity="center"
+                android:text="Tienda"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+
+            android:id="@+id/scrollView2"
+            android:layout_width="397dp"
+            android:layout_height="584dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="178dp"
+                        android:layout_height="166dp"
+                        android:layout_marginLeft="10px"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/arrozzz" />
+
+                    <LinearLayout
+                        android:layout_width="189dp"
+                        android:layout_height="166dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/PizzaHua_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal|bold"
+                            android:text="Arroz"
+                            />
+
+                        <TextView
+                            android:id="@+id/PizzaHua1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="7pt"
+                            android:textStyle="normal"
+                            android:textAlignment="textStart"
+                            android:text="Arroz blanco, ideal como acompañamiento o base para una variedad de platos."
+
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/PizzaHuaP_1"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$40"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <!-- Segundo elemento -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_marginLeft="10px"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/frijolnegro" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza22"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal|bold"
+                            android:text="Frijo Negros"
+                            />
+
+                        <TextView
+                            android:id="@+id/PizzaH23"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:text="Frijoles secos, perfectos para preparar guisos, sopas o como complemento en diversas recetas."
+                            android:textSize="7pt"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza24"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:paddingTop="16pt"
+                        android:text="$40"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="98dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10px"
+                        app:srcCompat="@drawable/aceite" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza31"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Aceite 1 litro"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza32"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="7pt"
+                            android:textStyle="normal"
+                            android:textAlignment="textStart"
+                            android:text="Aceite vegetal para cocinar, freír y sazonar alimentos."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza33"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$30"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="91dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/mil" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/Pizza34"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Leche 1 litro"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza42"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="7pt"
+                            android:textStyle="normal"
+                            android:text="Leche fresca, ideal para beber, cocinar o preparar postres."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza41"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$30"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView21441"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/pan" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza66"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Pan de caja"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza68"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal"
+                            android:text="Pan rebanado, perfecto para sandwiches, tostadas o acompañar comidas."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza69"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$90"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2141"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/azucar" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza88"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Azucar"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza81"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal"
+                            android:text="Azúcar blanca para endulzar bebidas y recetas de repostería."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza89"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$40"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView223"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/pastas" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/PizzaHu99"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Pastas"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza99"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal"
+                            android:text="Ideales para preparar platos rápidos y fáciles."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza80"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$46"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>

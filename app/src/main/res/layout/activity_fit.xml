@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fit">
+        <LinearLayout
+
+            android:layout_width="409dp"
+            android:layout_height="100dp"
+            android:background="@drawable/fondo"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18pt"
+                android:gravity="center"
+                android:text="Fit"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+
+            android:id="@+id/scrollView2"
+            android:layout_width="397dp"
+            android:layout_height="584dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="178dp"
+                        android:layout_height="166dp"
+                        android:layout_marginLeft="10px"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/avena" />
+
+                    <LinearLayout
+                        android:layout_width="189dp"
+                        android:layout_height="166dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/PizzaHua_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal|bold"
+                            android:text="Ensalada Quinoa"
+                            />
+
+                        <TextView
+                            android:id="@+id/PizzaHua1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="7pt"
+                            android:textStyle="normal"
+                            android:textAlignment="textStart"
+                            android:text="Quinoa, espinacas, tomates cherry, pepino, pimientos, aguacate, limón, aceite de oliva, sal y pimienta."
+
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/PizzaHuaP_1"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$60"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <!-- Segundo elemento -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_marginLeft="10px"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/smoothie" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza22"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal|bold"
+                            android:text="Smoothie Verde"
+                            />
+
+                        <TextView
+                            android:id="@+id/PizzaH23"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:text="Espinacas, plátano, manzana verde, pepino, jugo de limón, agua de coco."
+                            android:textSize="7pt"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza24"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:paddingTop="16pt"
+                        android:text="$80"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="98dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10px"
+                        app:srcCompat="@drawable/salmon" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza31"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Salmon Horno"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza32"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="7pt"
+                            android:textStyle="normal"
+                            android:textAlignment="textStart"
+                            android:text="Filetes de salmón, espárragos, limón, aceite de oliva, ajo, sal y pimienta."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza33"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$30"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="91dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/batat" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/Pizza34"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Batata Asada con Hummus"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza42"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="7pt"
+                            android:textStyle="normal"
+                            android:text="Batatas, aceite de oliva, sal, pimienta, hummus."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza41"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$86"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView21441"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/yogur" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza66"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Yogur Griego con Frutas "
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza68"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal"
+                            android:text="Yogur griego natural, frutas frescas (como berries o manzana), nueces o almendras."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza69"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$90"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2141"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/avenafurtas" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza88"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Avena Frutas"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza81"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal"
+                            android:text="Avena, leche de almendra, fresas, moras, semillas de chía, canela."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza89"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$60"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView223"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/batat" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/PizzaHu99"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Bowl de Batata"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza99"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal"
+                            android:text="Batata, kale, garbanzos asados, tahini, aceite de oliva, sal y pimienta."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza80"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$46"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>

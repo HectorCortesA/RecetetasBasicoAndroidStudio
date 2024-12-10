@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Coffe">
+
+        <LinearLayout
+
+            android:layout_width="409dp"
+            android:layout_height="100dp"
+            android:background="@drawable/fondo"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18pt"
+                android:gravity="center"
+                android:text="Coffe"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+
+            android:id="@+id/scrollView2"
+            android:layout_width="397dp"
+            android:layout_height="584dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="178dp"
+                        android:layout_height="166dp"
+                        android:layout_marginLeft="10px"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/espresso" />
+
+                    <LinearLayout
+                        android:layout_width="189dp"
+                        android:layout_height="166dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/PizzaHua_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal|bold"
+                            android:text="Cafe Espresso"
+                            />
+
+                        <TextView
+                            android:id="@+id/PizzaHua1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="7pt"
+                            android:textStyle="normal"
+                            android:textAlignment="textStart"
+                            android:text="Café molido fino y agua caliente."
+
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/PizzaHuaP_1"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$60"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <!-- Segundo elemento -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_marginLeft="10px"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cappuccino" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza22"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal|bold"
+                            android:text="Cappucino"
+                            />
+
+                        <TextView
+                            android:id="@+id/PizzaH23"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:text="Espresso, leche caliente y espuma de leche."
+                            android:textSize="7pt"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza24"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:paddingTop="16pt"
+                        android:text="$80"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="98dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10px"
+                        app:srcCompat="@drawable/late" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza31"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Cafe Latte"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza32"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="7pt"
+                            android:textStyle="normal"
+                            android:textAlignment="textStart"
+                            android:text="Espresso, mucha leche caliente y un toque de espuma."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza33"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$30"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="91dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/macchiato" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/Pizza34"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Macchiato"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza42"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="7pt"
+                            android:textStyle="normal"
+                            android:text="Espresso y un toque de espuma de leche."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza41"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$86"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView21441"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/mocha" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza66"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Mocha"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza68"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal"
+                            android:text="Espresso, chocolate caliente y leche."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza69"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$90"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2141"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cappuccino" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Pizza88"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Flat White"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza81"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal"
+                            android:text="spresso y leche vaporizada sin espuma."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza89"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$60"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/circle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView223"
+                        android:layout_width="115dp"
+                        android:layout_height="166dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/late" />
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/PizzaHu99"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingStart="3pt"
+                            android:paddingTop="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="bold"
+                            android:text="Café con Leche"
+                            />
+
+                        <TextView
+                            android:id="@+id/Pizza99"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingStart="3pt"
+                            android:textSize="8pt"
+                            android:textStyle="normal"
+                            android:text="Café filtrado y leche caliente."
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Pizza80"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18pt"
+                        android:gravity="center"
+                        android:text="$46"
+                        android:textSize="8pt"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
